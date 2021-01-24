@@ -2,11 +2,7 @@
 Google Search API
 =====
 
-[![Coverage Status](https://coveralls.io/repos/abenassi/Google-Search-API/badge.svg?branch=master)](https://coveralls.io/r/abenassi/Google-Search-API?branch=master)
-[![Build Status](https://travis-ci.org/abenassi/Google-Search-API.svg?branch=master)](https://travis-ci.org/abenassi/Google-Search-API)
-[![](https://img.shields.io/pypi/v/Google-Search-API.svg)](https://pypi.python.org/pypi/Google-Search-API)
-
-*The original package was developed by Anthony Casagrande and can be downloaded at https://github.com/BirdAPI This is a forked package that I will continue maintaining in the foreseeable future. I will try to maintain a strongly modularized design so when something is broken anyone can quickly repair it. All contributions are very welcome.*
+*The original package was developed by Anthony Casagrande and can be downloaded at https://github.com/BirdAPI This is a fork from https://pypi.python.org/pypi/Google-Search-API (which is a fork from https://github.com/BirdAPI) where I added features such as proxy maintainance, proxied query and rate-limiting functionalities.*
 
 Google Search API is a python based library for searching various functionalities of google.  It uses screen scraping to retrieve the results, and thus is unreliable if the way google's web pages are returned change in the future. This package is currently under heavy refactoring so changes in the user interface should be expected for the time being.
 
@@ -44,13 +40,14 @@ The repo is structured like a package, so it can be installed from pip using
 github clone url. From command line type:
 
 ```
-pip install git+https://github.com/abenassi/Google-Search-API
+pip install git+https://github.com/toggled/Google-Search-API
+
 ```
 
 To upgrade the package if you have already installed it:
 
 ```
-pip install git+https://github.com/abenassi/Google-Search-API --upgrade
+pip install git+https://github.com/toggled/Google-Search-API --upgrade
 ```
 
 Please note that you should also install **Firefox browser** in order to use images search.
